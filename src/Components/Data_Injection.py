@@ -12,9 +12,9 @@ from dataclasses import dataclass
 
 @dataclass #This is a decorator that is used to create a dataclass. It is a part of the dataclasses module which is provided by Python 3.7 and later.
 class DataInjectionConfig:
-    train_data_path: str=os.path.join('src', 'cmpts', 'artifacts', 'train.csv')
-    test_data_path: str=os.path.join('src', 'cmpts', 'artifacts', 'test.csv')
-    raw_data_path: str=os.path.join('src', 'cmpts', 'artifacts', 'raw.csv')
+    train_data_path: str=os.path.join('src', 'Components', 'artifacts', 'train.csv')
+    test_data_path: str=os.path.join('src', 'Components', 'artifacts', 'test.csv')
+    raw_data_path: str=os.path.join('src', 'Components', 'artifacts', 'raw.csv')
 class DataInjection:
     def __init__(self):
         self.config = DataInjectionConfig()
