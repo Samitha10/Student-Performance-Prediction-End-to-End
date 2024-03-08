@@ -9,7 +9,7 @@ def get_requirements():
 setup(
     name="SPE_Project",
     version="0.1",
-    author="Samith10",
+    author="Samith Abesinghe",
     author_email="samithabesinghe1999@gmail.com",
     packages=find_packages(),
     install_requires=get_requirements(),
