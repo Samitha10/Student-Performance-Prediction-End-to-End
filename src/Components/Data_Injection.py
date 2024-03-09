@@ -9,6 +9,7 @@ from src.logger import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+from src.Components.Data_Transformation import DataTransformation, DataTransformationConfig
 
 @dataclass #This is a decorator that is used to create a dataclass. It is a part of the dataclasses module which is provided by Python 3.7 and later.
 class DataInjectionConfig:
@@ -45,6 +46,10 @@ class DataInjection:
 if __name__=="__main__":
     obj = DataInjection()
     train_data, test_data = obj.initiate_data_injection()
+
+    data_transformation = DataTransformation()
+    data_transformation.initiate_data_trasformation(train_data,test_data)
+
     print(train_data, test_data)
 
     
