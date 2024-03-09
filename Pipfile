@@ -11,8 +11,12 @@ matplotlib = "*"
 scikit-learn = "*"
 setuptools = "*"
 spe-project = {file = ".", editable = true}
+catboost = "*"
+xgboost = "*"
+dill = "*"
 
 [dev-packages]
+tensorboard = "*"
 
 [requires]
 python_version = "3.12"

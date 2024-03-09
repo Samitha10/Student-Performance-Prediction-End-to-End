@@ -1,17 +1,19 @@
+# any execution that happens is logged into a logger
 import logging,os
 from datetime import datetime
 
-LOG_FILE = f"{datetime.now().strftime('%Y-%m-%d-%H-%M')}.log"
-logs = os.path.join(os.getcwd(), 'logs')
-os.makedirs(logs, exist_ok=True)
+LOG_FILE=f'{datetime.now().strftime("%m_%d_%Y_%H_%M_%S")}.log'
+logs_path=os.path.join(os.getcwd(),'logs',LOG_FILE)
+os.makedirs(logs_path,exist_ok=True)
 
-LOG_FILE_PATH = os.path.join(logs, LOG_FILE)
 
-# Move the log file inside the 'logs' folder
+LOG_FILE_PATH=os.path.join(logs_path,LOG_FILE)
+
 logging.basicConfig(
-    filename=LOG_FILE_PATH, 
-    level=logging.INFO, 
-    format='%(asctime)s - %(lineno)d - %(name)s - %(levelname)s - %(message)s')
+    filename=LOG_FILE_PATH,
+    format='[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
 
-if __name__ == '__main__':
-    logging.info('Logging Started')
+# if __name__=='__main__':
+#     logging.info('logging has started')
