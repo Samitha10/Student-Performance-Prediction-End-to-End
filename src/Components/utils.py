@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.expt import CustomException
+from expt import CustomException
 from src.logger import logging
 import pickle
 
