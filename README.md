@@ -7,7 +7,6 @@ This repository contains an end-to-end solution for predicting student performan
 - [Introduction](#introduction)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Data](#data)
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
@@ -36,28 +35,6 @@ Predicting student performance is crucial for educational institutions to identi
 - HTML
 - Machine Learning Libraries: scikit-learn, pandas, numpy, matplotlib, seaborn
 - Web Framework: Flask
-
-## Project Structure
-
-```
-Student-Performance-Prediction-End-to-End/
-├── data/
-│   ├── raw/
-│   ├── processed/
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── exploratory_data_analysis.ipynb
-│   ├── model_training.ipynb
-│   ├── model_evaluation.ipynb
-├── src/
-│   ├── app.py
-│   ├── model.py
-│   ├── utils.py
-├── templates/
-│   ├── index.html
-├── requirements.txt
-├── README.md
-```
 
 ## Data
 
